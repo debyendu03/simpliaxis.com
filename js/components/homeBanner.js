@@ -37,14 +37,12 @@ export function homeBanner() {
                             <img src="asset/logos/cplog9.webp" alt="Hexaware" height="60" class="p-1" />
                             <img src="asset/logos/cplog10.webp" alt="Thomson Reuters" height="75" class="p-1" />
                             <img src="asset/logos/cplog12.webp" alt="Wells Fargo" height="65" class="p-1" />
-                                     <img src="asset/logos/cplog4.webp" alt="Infosys" height="42" class="p-1" />
+                            <img src="asset/logos/cplog4.webp" alt="Infosys" height="42" class="p-1" />
                             <img src="asset/logos/cplog6.webp" alt="Bosch" height="37" class="p-1" />
                             <img src="asset/logos/cplog3.webp" alt="Capgemini" height="40" class="p-1" />
                             <img src="asset/logos/cplog1.webp" alt="KPMG" height="45" class="p-1" />
                             <img src="asset/logos/cplog2.webp" alt="Accenture" height="40" class="p-1" />
-                          <img src="asset/logos/cplog5.webp" alt="Cognizant" height="32" class="p-1" />
-                         
-                     
+                            <img src="asset/logos/cplog5.webp" alt="Cognizant" height="32" class="p-1" />
                 </div>
               </div>
               <p style="display: inline" class="subtitle">and 6,000+ companies across the globe</p>
