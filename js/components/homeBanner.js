@@ -27,7 +27,7 @@ export function homeBanner() {
               <h6 class="mb-4">Trusted by</h6>
               <div class="marquee me-5 mb-3">
                 <div class="marquee-content w-50">
-                           <img src="asset/logos/cplog4.webp" alt="Infosys" height="42" class="p-1" />
+                            <img src="asset/logos/cplog4.webp" alt="Infosys" height="42" class="p-1" />
                             <img src="asset/logos/cplog6.webp" alt="Bosch" height="37" class="p-1" />
                             <img src="asset/logos/cplog3.webp" alt="Capgemini" height="40" class="p-1" />
                             <img src="asset/logos/cplog1.webp" alt="KPMG" height="45" class="p-1" />
