@@ -1,0 +1,42 @@
+.navbar-custom {
+    background-color: #f0f9ff;
+}
+.navbar-custom-container {
+    width: 85%;
+}
+.navbar-custom .navbar-custom-img {
+    width: 150px;
+    height: auto;
+}
+.form-control:focus {
+    box-shadow: none;
+}
+.icon {
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+.navbar-custom li a {
+    color: #01203d !important;
+}
+.navbar-custom-dropdown:hover > .navbar-custom-dropdown-list {
+    display: block;
+}
+
+.navbar-custom-search-sec input {
+    outline: none;
+    padding: 5px 0;
+    border-left: none;
+    border-radius: 0 8px 8px 0;
+    background-color: #f0f9ff;
+}
+.navbar-custom-search-sec span {
+    border: 1px solid #bebcbc;
+    border-right: none;
+    border-radius: 8px 0 0 8px;
+
+    padding: 5px 9px;
+}
+.navbar-custom .search-img {
+    width: 17px;
+    padding: 5px 0;
+}

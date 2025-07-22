@@ -1,0 +1,71 @@
+.home-ban-title-sec,
+.home-ban-vdo-container {
+  width: fit-content;
+}
+
+.home-banner-sec .button {
+  background-color: #fa4a23;
+  color: white;
+}
+
+.trusted-by-section {
+  padding: 1rem 0.7rem;
+  text-align: left;
+}
+
+.subtitle {
+  margin-top: 2rem;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.marquee {
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-content {
+  display: flex;
+  gap: 2rem;
+  animation: scroll 2s linear infinite;
+  width: max-content;
+}
+
+.marquee-content img {
+  height: 20px;
+  max-width: 90px;
+  object-fit: contain;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 600px) {
+  .marquee-content img {
+    height: 30px;
+    max-width: 80px;
+  }
+
+  .trusted-by-section h2 {
+    font-size: 1.2rem;
+  }
+
+  .subtitle {
+    font-size: 0.8rem;
+  }
+}
+
+/* official partners section */
+
+.official-training-partner-secion .marquee-content {
+  display: flex;
+  gap: 2rem;
+  animation: scroll 3s linear infinite;
+  width: max-content;
+}

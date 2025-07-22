@@ -1,0 +1,29 @@
+.query-banner-bg {
+    background: linear-gradient(90deg, #17446a 0%, #01203d 100%);
+    border-radius: 20px;
+    min-height: 120px;
+    position: relative;
+    overflow: hidden;
+}
+.query-btn-orange {
+    background: #fa4a23;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    transition: background 0.2s;
+}
+.query-btn-orange:hover {
+    background: #d63c17;
+    color: #fff;
+}
+@media (max-width: 767px) {
+    .query-banner-bg {
+        flex-direction: column !important;
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+    .query-btn-orange {
+        width: 100%;
+        margin-top: 1rem;
+    }
+}

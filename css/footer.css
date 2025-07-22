@@ -1,0 +1,27 @@
+.sticky-contact-bar {
+    position: sticky;
+    bottom: 0;
+    z-index: 10;
+    width: 100%;
+    min-height: 48px;
+    background: #1b2540;
+}
+
+.sticky-bar-section {
+    background: #1b2540;
+    font-weight: 600;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: none;
+}
+
+@media (max-width: 767px) {
+    .sticky-contact-bar .row {
+        flex-direction: column;
+    }
+    .sticky-bar-section {
+        border: none;
+    }
+}

@@ -1,0 +1,12 @@
+.trainer-card-section {
+    background: #f8f9fa;
+}
+
+.trainer-scroll-wrapper {
+    gap: 1.5rem;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.trainer-scroll-wrapper::-webkit-scrollbar {
+    display: none;
+}

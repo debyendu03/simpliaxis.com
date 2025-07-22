@@ -1,0 +1,56 @@
+.combo-courses-banner-bg {
+    background: linear-gradient(90deg, #1a355e 0%, #5fa6e6 100%);
+    min-height: 350px;
+}
+
+.combo-courses-banner-section h2,
+.combo-courses-banner-section h3 {
+    background: #0d223f;
+}
+
+.combo-courses-banner-section .custom-btn-color {
+    background: #0d223f;
+}
+.combo-courses-banner-right {
+    color: #0d223f;
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+@media (max-width: 767px) {
+    .combo-courses-banner-bg {
+        flex-direction: column;
+        min-height: 0;
+        padding: 2rem 0.5rem;
+    }
+    .combo-courses-character {
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+    .combo-courses-banner-right {
+        margin-top: 1.5rem;
+    }
+}
+/* Access Free Practice Tests section */
+
+.free-practice-test-banner-section .custom-btn-color {
+    background: #0d223f;
+}
+.free-practice-test-banner-bg,
+.live-webinars-banner-bg {
+    background: #dbeaf4;
+    min-height: 200px;
+}
+
+.live-webinars-banner-person {
+    max-width: 250px;
+}
+
+@media (max-width: 991px) {
+    .free-practice-test-banner-bg,
+    .live-webinars-banner-bg {
+        flex-direction: column;
+        min-height: 0;
+        padding: 2rem 0.5rem;
+    }
+}
