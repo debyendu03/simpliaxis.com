@@ -1,14 +1,14 @@
 export function footer() {
-    const html = `
+    const html = `  
     <!-- first row start -->
-    <div class="container-fluid px-2 px-md-0" style="width: 85%">
-        <div class="row mx-auto py-3 flex-column flex-md-row">
-            <div class="col-12 col-md-6 mb-4 mb-md-0">
+    <div class="container-fluid  " style="width: 85%">
+        <div class="  py-3 footer-first-row-group-container">
+            <div class=" footer-first-row-group-container-left">
                 <!-- Company -->
                 <div class="footer-group mb-3">
                     <button class="footer-toggle d-md-none w-100 text-start fw-bold mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#footer-company-list" aria-expanded="false" aria-controls="footer-company-list">Company <span class="float-end bi bi-chevron-down"></span></button>
                     <p class="fw-bold mb-2 d-none d-md-block">Company</p>
-                    <ul class="list-unstyled collapse d-md-block" id="footer-company-list">
+                    <ul class="list-unstyled collapse"   id="footer-company-list">
                         <li><a href="#" class="text-secondary text-decoration-none">About us</a></li>
                         <li><a href="#" class="text-secondary text-decoration-none">Accreditation</a></li>
                         <li><a href="#" class="text-secondary text-decoration-none">Careers</a></li>
@@ -21,7 +21,7 @@ export function footer() {
                 <div class="footer-group mb-3">
                     <button class="footer-toggle d-md-none w-100 text-start fw-bold mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#footer-offerings-list" aria-expanded="false" aria-controls="footer-offerings-list">Offerings <span class="float-end bi bi-chevron-down"></span></button>
                     <p class="fw-bold mb-2 d-none d-md-block">Offerings</p>
-                    <ul class="list-unstyled collapse d-md-block" id="footer-offerings-list">
+                    <ul class="list-unstyled collapse"  id="footer-offerings-list" >
                         <li><a href="#" class="text-secondary text-decoration-none">Live virtual (Online)</a></li>
                         <li><a href="#" class="text-secondary text-decoration-none">Classroom (In-Person)</a></li>
                         <li><a href="#" class="text-secondary text-decoration-none">Agile services</a></li>
@@ -32,10 +32,10 @@ export function footer() {
                     </ul>
                 </div>
                 <!-- Resources -->
-                <div class="footer-group mb-3">
+                <div class="footer-group mb-3 me-3">
                     <button class="footer-toggle d-md-none w-100 text-start fw-bold mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#footer-resources-list" aria-expanded="false" aria-controls="footer-resources-list">Resources <span class="float-end bi bi-chevron-down"></span></button>
                     <p class="fw-bold mb-2 d-none d-md-block">Resources</p>
-                    <ul class="list-unstyled collapse d-md-block" id="footer-resources-list">
+                    <ul class="list-unstyled collapse" id="footer-resources-list">
                         <li><a href="#" class="text-secondary text-decoration-none">Blogs</a></li>
                         <li><a href="#" class="text-secondary text-decoration-none">Webinars</a></li>
                         <li><a href="#" class="text-secondary text-decoration-none">Trainers</a></li>
@@ -49,29 +49,29 @@ export function footer() {
                     </ul>
                 </div>
             </div>
-            <div class="col-12 col-md-6 ">
+            <div class="footer-first-row-group-container-right">
                 <!-- Newsletter, Connect, Payment -->
                 <div class="mb-4">
                     <p class="fw-bold mb-2">Get Our Weekly Newsletter :</p>
-                    <form class="d-flex flex-column flex-sm-row mb-3 gap-2" role="search w-100 ">
-                        <input class="form-control me-2" type="email" placeholder="Email*" aria-label="Email" style="border: 1px solid #000" />
+                    <form class=" mb-3 gap-2" role="search w-100 ">
+                        <input class="form-control " type="email" placeholder="Email*"  style="border: 1px solid #000" />
                         <button class="btn btn-dark fw-bold px-3 d-flex align-items-center justify-content-center" type="submit">
                             Subscribe <i class="bi bi-chevron-right ms-2"></i>
                         </button>
                     </form>
-                     <div class="d-flex">
-                    <div class="mb-3 w-25">
-                        <span class="fw-bold pe-2">Connect with us :</span>
-                        <div class="mt-2 d-flex flex-wrap gap-2">
+                    <div class="footer-first-row-group-right-news-letter-connect-payment-container">
+                       <div class="mb-3 footer-first-row-right-connect-section ">
+                         <span class="fw-bold pe-2">Connect with us :</span>
+                          <div class="mt-2 d-flex flex-wrap gap-2">
                             <a href="#" class="me-2"><i class="bi bi-linkedin fs-4"></i></a>
                             <a href="#" class="me-2"><i class="bi bi-facebook fs-4"></i></a>
                             <a href="#" class="me-2"><i class="bi bi-instagram fs-4"></i></a>
                             <a href="#" class="me-2"><i class="bi bi-twitter fs-4"></i></a>
-                        </div>
-                    </div>
-                    <div class="mb-3 w-50">
-                        <span class="fw-bold">We Accept</span>
-                        <div class="mt-2 d-flex flex-wrap gap-2">
+                          </div>
+                       </div>
+                        <div class="mb-3 footer-first-row-right-payment-section">
+                          <span class="fw-bold">We Accept</span>
+                          <div class="mt-2 d-flex flex-wrap gap-2">
                             <img src="asset/logos/payment-logos/paypal.webp" alt="PayPal" height="18" />
                             <img src="asset/logos/payment-logos/razorpayfooter.webp" alt="Razorpay" height="18" />
                             <img src="asset/logos/payment-logos/stripe.webp" alt="Stripe" height="18" />
@@ -81,7 +81,7 @@ export function footer() {
                             <img src="asset/logos/payment-logos/afterpay.webp" alt="Afterpay" height="18" />
                             <img src="asset/logos/payment-logos/visa.webp" alt="Visa" height="18" />
                             <img src="asset/logos/payment-logos/klarnafooter.webp" alt="Klarna" height="18" />
-                        </div>
+                         </div>
                     </div>
                     </div>
 
@@ -91,14 +91,14 @@ export function footer() {
     </div>
     <!-- first row end -->
     <!-- second row start -->
-    <div class="container-fluid pb-2" style="width: 100%">
-        <div class="row mx-auto flex-column flex-md-row align-items-start justify-content-between">
-            <div class="col-12 col-md-6 mb-4 mb-md-0">
+    <div class="container-fluid " style="width: 85%">
+        <div class="footer-second-row-group-container">
+            <div class="footer-second-row-group-container-left">
                 <!-- Partner with us -->
                 <div class="footer-group mb-3">
                     <button class="footer-toggle d-md-none w-100 text-start fw-bold mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#footer-partner-list" aria-expanded="false" aria-controls="footer-partner-list">Partner with us <span class="float-end bi bi-chevron-down"></span></button>
                     <p class="fw-bold mb-2 d-none d-md-block">Partner with us</p>
-                    <ul class="list-unstyled collapse d-md-block" id="footer-partner-list">
+                    <ul class="list-unstyled collapse" id="footer-partner-list">
                         <li><a href="#" class="text-secondary text-decoration-none">Become an Instructor</a></li>
                         <li><a href="#" class="text-secondary text-decoration-none">Hire from Us</a></li>
                         <li><a href="#" class="text-secondary text-decoration-none">Become a Training Partner</a></li>
@@ -116,8 +116,10 @@ export function footer() {
                         <li><a href="#" class="text-secondary text-decoration-none">Html Sitemap</a></li>
                     </ul>
                 </div>
+                 
+             
             </div>
-            <div class="col-12 col-md-6">
+            <div class="footer-second-row-group-container-right">
                 <!-- Contact Card -->
                 <div class="p-4 rounded-3 shadow mb-4 border border-2 bg-body-tertiary rounded-4 bg-white">
                     <div class="row g-4">
@@ -171,8 +173,8 @@ export function footer() {
     </div>
     <!-- second row end -->
     <!-- third row start -->
-    <div class="container-fluid" style="width: 100%">
-        <div class="row mb-5">
+    <div class="container-fluid" style="width: 85%">
+        <div class="row mb-5 mx-auto">
             <p class="fw-bold mb-3">Top Categories</p>
             <div class="d-flex flex-wrap align-items-center">
                 <a href="#" class="text-decoration-none">
@@ -231,8 +233,8 @@ export function footer() {
     </div>
     <!-- third row end -->
     <!-- fourth row start -->
-    <div class="container-fluid" style="width: 100%">
-        <div class="row mb-5">
+    <div class="container-fluid" style="width: 85%">
+        <div class="row mb-5 mx-auto">
             <p class="fw-bold mb-3">Top Courses</p>
             <div class="d-flex flex-wrap align-items-center">
                 <a href="#" class="text-decoration-none">
@@ -374,9 +376,9 @@ export function footer() {
     </div>
     <!-- fourth row end -->
     <!-- fifth row start -->
-    <div class="container-fluid">
-        <div class="row mb-5">
-            <div class="text-secondary text-center small mb-4">
+    <div class="container-fluid" style="width: 85%">
+        <div class="row mb-5 mx-auto" >
+            <div class="text-secondary text-center small mb-4" >
                 Disclaimer : Certified Scrum Master(CSM®),Advanced Certified Scrum Master(A-CSM®), Certified Scrum Professional ScrumMaster(CSP-SM®), Certified Scrum Product Owner (CSPO®), Advanced Certified Scrum Product Owner (A-CSPO®), Certified Scrum Professional Product Owner(CSP-PO®), Certified Scrum Developer (CSD®), Certified Scrum Professional(CSP®), Certified Agile Leadership(CAL-I®,CAL-II®), Scrum Education Units(SEU®),Certified Scrum Trainer (CST®),Certified Enterprise Coach(CEC®), and Certified Team Coach(CTC®), are registered trademarks of Scrum Alliance®.
                 <p class="footer-custom-disclaimer-text d-none" id="footer-custom-disclaimer-text">
                     Profession Scrum Master (PSM-I®, PSM-II®, PSM-III®), Profession Scrum Product Owner (PSPO-I®, PSPO-II®, PSPO-III®), Profession Scrum Developer (PSD-I®), Scaled Professional Scrum(SPS®),Professional Scrum With Kanban(PSK-I®) , Prove your knowledge of Professional Agile Leadership(PAL-I®), Prove your knowledge of Evidence-Based Management™ (PAL-EBM®), Prove Your Scrum with User Experience Knowledge(PSU-I®) and Professional Scrum Trainer(PST®) are registered trademarks of Scrum.org®. SimpliAxis INC is a Professional Training Network member of Scrum.org®.

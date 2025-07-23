@@ -1,9 +1,8 @@
-/* Mobile-first: stack columns, hide lists by default, style toggles */
 .footer-group {
-    border-bottom: 1px solid #e5e5e5;
     padding-bottom: 0.5rem;
     margin-bottom: 0.5rem;
 }
+
 .footer-toggle {
     background: none;
     border: none;
@@ -26,6 +25,7 @@
 }
 .footer-group ul li {
     margin-bottom: 0.4rem;
+    font-size: 0.8em;
 }
 .footer-group ul li:last-child {
     margin-bottom: 0;
@@ -33,9 +33,12 @@
 .footer-group p {
     margin-bottom: 0.5rem;
 }
+.footer-first-row-group-container-right form {
+    display: flex;
+    flex-direction: column;
+}
 
-/* Newsletter, connect, payment: stack on mobile */
-@media (max-width: 767.98px) {
+@media (min-width: 700px) {
     .footer-group {
         padding-bottom: 0.5rem;
         margin-bottom: 0.5rem;
@@ -47,10 +50,79 @@
     .footer-toggle[aria-expanded="true"] .bi {
         transform: rotate(180deg);
     }
+    .footer-first-row-group-container,
+    .footer-second-row-group-container {
+        display: flex;
+        flex-direction: row;
+        align-items: top;
+        width: 100%;
+    }
+    .footer-first-row-group-container-left,
+    .footer-second-row-group-container-left {
+        display: flex;
+        flex-direction: row;
+        width: fit-content;
+        gap: 1.5rem;
+    }
+    .footer-first-row-group-container-right,
+    .footer-second-row-group-container-right {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: fit-content;
+    }
+    .footer-first-row-group-container-right {
+        width: 35%;
+        align-items: flex-start;
+    }
+    .footer-first-row-group-container-right form {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-first-row-right-connect-section {
+        width: fit-content;
+    }
+    .footer-first-row-right-payment-section {
+        width: fit-content;
+    }
+    .footer-group ul li {
+        font-size: 0.9em;
+    }
+}
+@media (min-width: 1024px) {
+    .footer-first-row-group-container-left,
+    .footer-second-row-group-container-left {
+        width: 55%;
+        justify-content: space-evenly;
+    }
+    .footer-first-row-group-container-right,
+    .footer-second-row-group-container-right {
+        width: 45%;
+        justify-content: space-evenly;
+    }
+
+    .footer-first-row-right-connect-section {
+        width: 55%;
+    }
+    .footer-group ul li {
+        font-size: 1em;
+    }
+
+    .footer-first-row-group-container-right form {
+        display: flex;
+
+        flex-direction: row;
+    }
+    .footer-first-row-group-right-news-letter-connect-payment-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
 }
 
 /* Desktop: side-by-side columns, always show lists, hide toggles */
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     .footer-toggle {
         display: none;
     }
@@ -64,7 +136,7 @@
         margin-bottom: 1.5rem;
         padding-bottom: 0;
     }
-}
+} */
 
 /* Sticky contact bar */
 .sticky-contact-bar {
