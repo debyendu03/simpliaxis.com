@@ -1,7 +1,7 @@
 export function footer() {
     const html = `
     <!-- first row start -->
-    <div class="container-fluid px-2 px-md-0" style="width: 100%">
+    <div class="container-fluid px-2 px-md-0" style="width: 85%">
         <div class="row mx-auto py-3 flex-column flex-md-row">
             <div class="col-12 col-md-6 mb-4 mb-md-0">
                 <!-- Company -->
@@ -49,7 +49,7 @@ export function footer() {
                     </ul>
                 </div>
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 ">
                 <!-- Newsletter, Connect, Payment -->
                 <div class="mb-4">
                     <p class="fw-bold mb-2">Get Our Weekly Newsletter :</p>
@@ -59,7 +59,8 @@ export function footer() {
                             Subscribe <i class="bi bi-chevron-right ms-2"></i>
                         </button>
                     </form>
-                    <div class="mb-3">
+                     <div class="d-flex">
+                    <div class="mb-3 w-25">
                         <span class="fw-bold pe-2">Connect with us :</span>
                         <div class="mt-2 d-flex flex-wrap gap-2">
                             <a href="#" class="me-2"><i class="bi bi-linkedin fs-4"></i></a>
@@ -68,7 +69,7 @@ export function footer() {
                             <a href="#" class="me-2"><i class="bi bi-twitter fs-4"></i></a>
                         </div>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-3 w-50">
                         <span class="fw-bold">We Accept</span>
                         <div class="mt-2 d-flex flex-wrap gap-2">
                             <img src="asset/logos/payment-logos/paypal.webp" alt="PayPal" height="18" />
@@ -82,6 +83,8 @@ export function footer() {
                             <img src="asset/logos/payment-logos/klarnafooter.webp" alt="Klarna" height="18" />
                         </div>
                     </div>
+                    </div>
+
                 </div>
             </div>
         </div>
