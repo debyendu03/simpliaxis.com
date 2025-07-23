@@ -5,25 +5,50 @@
     position: relative;
     overflow: hidden;
 }
+
 .query-btn-orange {
     background: #fa4a23;
     color: #fff;
     border: none;
     border-radius: 8px;
     transition: background 0.2s;
+    white-space: nowrap;
 }
+
 .query-btn-orange:hover {
     background: #d63c17;
     color: #fff;
 }
+
 @media (max-width: 767px) {
     .query-banner-bg {
         flex-direction: column !important;
         text-align: center;
-        padding: 2rem 1rem;
+        padding: 1.5rem 1rem;
+        min-height: auto;
     }
+
     .query-btn-orange {
         width: 100%;
         margin-top: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .trusted-by-section {
+        width: 98% !important;
+        padding: 1rem !important;
+    }
+
+    .query-banner-bg h3 {
+        font-size: 0.9rem !important;
+        line-height: 1.3;
+    }
+}
+
+@media (min-width: 992px) {
+    .query-banner-bg img {
+        width: 35px !important;
+        height: 35px !important;
     }
 }
