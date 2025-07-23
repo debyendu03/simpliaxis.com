@@ -1,71 +1,195 @@
+.navbar-custom {
+    background-color: #f0f9ff;
+}
+.navbar-custom-container {
+    width: 85%;
+}
+.navbar-custom .navbar-custom-img {
+    width: 150px;
+    height: auto;
+}
+.form-control:focus {
+    box-shadow: none;
+}
+.icon {
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+.navbar-custom li a {
+    color: #01203d !important;
+}
+.navbar-custom-dropdown:hover > .navbar-custom-dropdown-list {
+    display: block;
+}
+
+.navbar-custom-search-sec input {
+    outline: none;
+    padding: 5px 0;
+    border-left: none;
+    border-radius: 0 8px 8px 0;
+    background-color: #f0f9ff;
+}
+.navbar-custom-search-sec span {
+    border: 1px solid #bebcbc;
+    border-right: none;
+    border-radius: 8px 0 0 8px;
+    padding: 5px 9px;
+}
+.navbar-custom .search-img {
+    width: 17px;
+    padding: 5px 0;
+}
+
 .home-ban-title-sec,
 .home-ban-vdo-container {
-  width: fit-content;
+    width: fit-content;
 }
 
 .home-banner-sec .button {
-  background-color: #fa4a23;
-  color: white;
+    background-color: #fa4a23;
+    color: white;
 }
 
 .trusted-by-section {
-  padding: 1rem 0.7rem;
-  text-align: left;
+    padding: 1rem 0.7rem;
+    text-align: left;
 }
 
 .subtitle {
-  margin-top: 2rem;
-  color: #555;
-  font-size: 0.9rem;
+    margin-top: 2rem;
+    color: #555;
+    font-size: 0.9rem;
 }
 
 .marquee {
-  overflow: hidden;
-  position: relative;
+    overflow: hidden;
+    position: relative;
 }
 
 .marquee-content {
-  display: flex;
-  gap: 2rem;
-  animation: scroll 2s linear infinite;
-  width: max-content;
+    display: flex;
+    gap: 2rem;
+    animation: scroll 2s linear infinite;
+    width: max-content;
 }
 
 .marquee-content img {
-  height: 20px;
-  max-width: 90px;
-  object-fit: contain;
+    height: 20px;
+    max-width: 90px;
+    object-fit: contain;
 }
 
 @keyframes scroll {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
-
-@media (max-width: 600px) {
-  .marquee-content img {
-    height: 30px;
-    max-width: 80px;
-  }
-
-  .trusted-by-section h2 {
-    font-size: 1.2rem;
-  }
-
-  .subtitle {
-    font-size: 0.8rem;
-  }
-}
-
-/* official partners section */
 
 .official-training-partner-secion .marquee-content {
-  display: flex;
-  gap: 2rem;
-  animation: scroll 3s linear infinite;
-  width: max-content;
+    display: flex;
+    gap: 2rem;
+    animation: scroll 3s linear infinite;
+    width: max-content;
+}
+
+/* Responsive additions */
+@media (max-width: 991.98px) {
+    .navbar-custom-container {
+        width: 95%;
+    }
+
+    .navbar-custom .navbar-custom-img {
+        width: 120px;
+    }
+
+    .navbar-custom-search-sec {
+        width: 100% !important;
+        margin: 1rem 0 !important;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .icon {
+        margin-left: 0;
+    }
+
+    /* Home banner responsive */
+    .home-banner-sec > div {
+        width: 95vw !important;
+    }
+
+    .home-ban-title-sec .card-title {
+        font-size: 1.75rem !important;
+    }
+
+    .trusted-by-section {
+        text-align: center;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .navbar-custom-container {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .navbar-custom .navbar-custom-img {
+        width: 100px;
+    }
+
+    .navbar-custom-search-sec input {
+        font-size: 14px;
+    }
+
+    /* Home banner responsive */
+    .home-ban-title-sec .card-title {
+        font-size: 1.5rem !important;
+    }
+
+    .home-ban-vdo-container {
+        padding: 1rem !important;
+    }
+
+    .marquee-content img {
+        height: 30px !important;
+        max-width: 80px !important;
+    }
+
+    .subtitle {
+        font-size: 0.8rem !important;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .navbar-custom .navbar-custom-img {
+        width: 90px;
+    }
+
+    .navbar-custom-search-sec input::placeholder {
+        font-size: 12px;
+    }
+
+    /* Home banner responsive */
+    .home-banner-sec > div {
+        width: 100vw !important;
+        padding: 0 1rem;
+    }
+
+    .home-ban-title-sec .card-title {
+        font-size: 1.25rem !important;
+    }
+
+    .card-body {
+        padding: 0.75rem !important;
+    }
+
+    .marquee-content img {
+        height: 25px !important;
+        max-width: 70px !important;
+    }
 }
