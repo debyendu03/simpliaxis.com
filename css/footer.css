@@ -121,23 +121,6 @@
     }
 }
 
-/* Desktop: side-by-side columns, always show lists, hide toggles */
-/* @media (min-width: 768px) {
-    .footer-toggle {
-        display: none;
-    }
-    .footer-group ul.collapse {
-        display: block !important;
-        height: auto !important;
-        opacity: 1 !important;
-    }
-    .footer-group {
-        border-bottom: none;
-        margin-bottom: 1.5rem;
-        padding-bottom: 0;
-    }
-} */
-
 /* Sticky contact bar */
 .sticky-contact-bar {
     position: sticky;
