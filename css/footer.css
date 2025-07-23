@@ -1,3 +1,72 @@
+/* Mobile-first: stack columns, hide lists by default, style toggles */
+.footer-group {
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.footer-toggle {
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    padding: 0.5rem 0;
+    color: #1b2540;
+    cursor: pointer;
+    outline: none;
+}
+.footer-toggle:focus {
+    background: #f5f5f5;
+}
+.footer-group ul {
+    transition: height 0.3s, opacity 0.3s;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.footer-group ul.collapse:not(.show) {
+    display: none;
+}
+.footer-group ul li {
+    margin-bottom: 0.4rem;
+}
+.footer-group ul li:last-child {
+    margin-bottom: 0;
+}
+.footer-group p {
+    margin-bottom: 0.5rem;
+}
+
+/* Newsletter, connect, payment: stack on mobile */
+@media (max-width: 767.98px) {
+    .footer-group {
+        padding-bottom: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .footer-toggle .bi {
+        float: right;
+        transition: transform 0.3s;
+    }
+    .footer-toggle[aria-expanded="true"] .bi {
+        transform: rotate(180deg);
+    }
+}
+
+/* Desktop: side-by-side columns, always show lists, hide toggles */
+@media (min-width: 768px) {
+    .footer-toggle {
+        display: none;
+    }
+    .footer-group ul.collapse {
+        display: block !important;
+        height: auto !important;
+        opacity: 1 !important;
+    }
+    .footer-group {
+        border-bottom: none;
+        margin-bottom: 1.5rem;
+        padding-bottom: 0;
+    }
+}
+
+/* Sticky contact bar */
 .sticky-contact-bar {
     position: sticky;
     bottom: 0;
@@ -6,7 +75,6 @@
     min-height: 48px;
     background: #1b2540;
 }
-
 .sticky-bar-section {
     background: #1b2540;
     font-weight: 600;
@@ -16,7 +84,6 @@
     width: 100%;
     border: none;
 }
-
 @media (max-width: 767px) {
     .sticky-contact-bar .row {
         flex-direction: column;
