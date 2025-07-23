@@ -8,7 +8,7 @@ export function footer() {
                 <div class="footer-group mb-3">
                     <button class="footer-toggle d-md-none w-100 text-start fw-bold mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#footer-company-list" aria-expanded="false" aria-controls="footer-company-list">Company <span class="float-end bi bi-chevron-down"></span></button>
                     <p class="fw-bold mb-2 d-none d-md-block">Company</p>
-                    <ul class="list-unstyled collapse"   id="footer-company-list">
+                    <ul class="list-unstyled collapse d-md-block"   id="footer-company-list">
                         <li><a href="#" class="text-secondary text-decoration-none">About us</a></li>
                         <li><a href="#" class="text-secondary text-decoration-none">Accreditation</a></li>
                         <li><a href="#" class="text-secondary text-decoration-none">Careers</a></li>
@@ -21,7 +21,7 @@ export function footer() {
                 <div class="footer-group mb-3">
                     <button class="footer-toggle d-md-none w-100 text-start fw-bold mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#footer-offerings-list" aria-expanded="false" aria-controls="footer-offerings-list">Offerings <span class="float-end bi bi-chevron-down"></span></button>
                     <p class="fw-bold mb-2 d-none d-md-block">Offerings</p>
-                    <ul class="list-unstyled collapse"  id="footer-offerings-list" >
+                    <ul class="list-unstyled collapse d-md-block"  id="footer-offerings-list" >
                         <li><a href="#" class="text-secondary text-decoration-none">Live virtual (Online)</a></li>
                         <li><a href="#" class="text-secondary text-decoration-none">Classroom (In-Person)</a></li>
                         <li><a href="#" class="text-secondary text-decoration-none">Agile services</a></li>
@@ -35,7 +35,7 @@ export function footer() {
                 <div class="footer-group mb-3 me-3">
                     <button class="footer-toggle d-md-none w-100 text-start fw-bold mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#footer-resources-list" aria-expanded="false" aria-controls="footer-resources-list">Resources <span class="float-end bi bi-chevron-down"></span></button>
                     <p class="fw-bold mb-2 d-none d-md-block">Resources</p>
-                    <ul class="list-unstyled collapse" id="footer-resources-list">
+                    <ul class="list-unstyled collapse d-md-block" id="footer-resources-list">
                         <li><a href="#" class="text-secondary text-decoration-none">Blogs</a></li>
                         <li><a href="#" class="text-secondary text-decoration-none">Webinars</a></li>
                         <li><a href="#" class="text-secondary text-decoration-none">Trainers</a></li>
@@ -98,7 +98,7 @@ export function footer() {
                 <div class="footer-group mb-3">
                     <button class="footer-toggle d-md-none w-100 text-start fw-bold mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#footer-partner-list" aria-expanded="false" aria-controls="footer-partner-list">Partner with us <span class="float-end bi bi-chevron-down"></span></button>
                     <p class="fw-bold mb-2 d-none d-md-block">Partner with us</p>
-                    <ul class="list-unstyled collapse" id="footer-partner-list">
+                    <ul class="list-unstyled collapse d-md-block" id="footer-partner-list">
                         <li><a href="#" class="text-secondary text-decoration-none">Become an Instructor</a></li>
                         <li><a href="#" class="text-secondary text-decoration-none">Hire from Us</a></li>
                         <li><a href="#" class="text-secondary text-decoration-none">Become a Training Partner</a></li>
@@ -108,7 +108,7 @@ export function footer() {
                 <div class="footer-group mb-3">
                     <button class="footer-toggle d-md-none w-100 text-start fw-bold mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#footer-support-list" aria-expanded="false" aria-controls="footer-support-list">Support <span class="float-end bi bi-chevron-down"></span></button>
                     <p class="fw-bold mb-2 d-none d-md-block">Support</p>
-                    <ul class="list-unstyled collapse d-md-block" id="footer-support-list">
+                    <ul class="list-unstyled collapse d-md-block " id="footer-support-list">
                         <li><a href="#" class="text-secondary text-decoration-none">FAQ</a></li>
                         <li><a href="#" class="text-secondary text-decoration-none">Terms and conditions</a></li>
                         <li><a href="#" class="text-secondary text-decoration-none">Privacy policy</a></li>
@@ -456,7 +456,7 @@ export function footer() {
 
     setTimeout(() => {
         function handleFooterCollapse() {
-            const isDesktop = window.innerWidth >= 768;
+            const isDesktop = window.innerWidth >= 700;
             document.querySelectorAll('.footer-group ul').forEach(ul => {
                 if (isDesktop) {
                     ul.classList.add('show');
@@ -467,6 +467,7 @@ export function footer() {
         }
         window.addEventListener('resize', handleFooterCollapse);
         window.addEventListener('DOMContentLoaded', handleFooterCollapse);
+        handleFooterCollapse();
     }, 0);
 
     return html;
