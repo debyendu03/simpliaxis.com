@@ -94,6 +94,31 @@
     animation: scroll 3s linear infinite;
     width: max-content;
 }
+.home-ban-title-sec {
+    width: 50%;
+}
+.hide-on-mobile {
+    display: block;
+}
+@media (max-width: 991.98px) {
+    .hide-on-mobile {
+        display: none !important;
+    }
+    .home-ban-title-sec-text {
+        width: 90%;
+        margin: 0 auto 30px auto;
+    }
+    .home-ban-title-sec-text .card-body {
+        text-align: center;
+    }
+    .home-ban-title-sec-text .card-body p {
+        justify-self: center;
+        width: 80%;
+    }
+    .home-ban-title-sec {
+        width: 95%;
+    }
+}
 
 /* Responsive additions */
 @media (max-width: 991.98px) {

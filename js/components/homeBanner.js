@@ -5,12 +5,12 @@ export function homeBanner() {
       class="home-banner-sec w-100 justify-content-center d-flex pb-5 rounded-5 rounded-top-0"
     >
       <div class="d-flex justify-content-center mt-4 mb-4" style="width: 87vw">
-        <div class="home-ban-title-sec w-50">
+        <div class="home-ban-title-sec ">
           <!-- home banner text section -->
-          <div class="home-ban-title-sec-text">
-            <div class="card border border-0" style="background-color: #f0f9ff">
-              <div class="card-body">
-                <h5 class="card-title fw-bold fs-2 border-primary">
+          <div class="home-ban-title-sec-text ">
+            
+              <div class=" card-body">
+                <h5 class="card-title fw-bold fs-2 ">
                   Enhance skills with our specialists - anytime, anywhere
                 </h5>
                 <p style="color: #4f6882; background-color: #f0f9ff" class="card-text mt-3 mb-4">
@@ -18,11 +18,10 @@ export function homeBanner() {
                   globally. Begin your immersive learning journey with us.
                 </p>
                 <a href="#" class="btn rounded-1 fw-bold py-2 px-4 button">Explore Courses</a>
-              </div>
             </div>
           </div>
           <!-- slider section -->
-          <div class="home-ban-title-sec-slide ">
+          <div class="home-ban-title-sec-slide hide-on-mobile">
             <section class="trusted-by-section">
               <h6 class="mb-4">Trusted by</h6>
               <div class="marquee me-5 mb-3">
@@ -49,7 +48,7 @@ export function homeBanner() {
             </section>
           </div>
           <!-- Rated by Learners -->
-          <div>
+          <div class="hide-on-mobile">
             <section>
               <div class="card mx-3 border border-0" style="max-width: 420px; background-color: #f0f9ff">
                 <div class="row g-0">
@@ -78,7 +77,7 @@ export function homeBanner() {
           </div>
         </div>
         <!-- home banner video side -->
-        <div class="home-ban-vdo-container w-50 p-4">
+        <div class="home-ban-vdo-container w-50 p-4 hide-on-mobile">
           <div class="position-relative">
             <img
               class="position-absolute top-0 end-0 z-0 pt-1"
